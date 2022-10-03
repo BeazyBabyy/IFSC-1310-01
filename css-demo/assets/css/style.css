@@ -1,4 +1,24 @@
-body{
-    background-color:red;
-    
-}
+/* ------Comment in CSS(HELP ORGANIZE CODE)------ */
+/* ------ BOX Sizing -----*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ------ Global Style(Typography) ------*/
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* ----To target header, no space = class primary. (header.primary)
+    space . = targets class within header (header .primary)---- */
+  header.primary{
+    /* --- google adobe color!! ---*/
+    background-color:rgba(70, 11, 164);
+  }
