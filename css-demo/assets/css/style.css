@@ -9,6 +9,20 @@ html {
     box-sizing: inherit;
   }
 
+  /*-------Utility Classes-------*/
+  .container{
+    max-width:960px;
+    width:80vw;
+    /*--Centering specific data to center--*/
+    margin:40px auto;
+  }
+
+  /*-----Responsive Images -----*/
+  /* Make content imgs to fit to parent size*/
+  img{
+    max-width:100%;
+  }
+
   /* ------ Global Style(Typography) ------*/
 
   body {
@@ -91,7 +105,43 @@ hearder.primary ul li a:hover, header.primary ul li a:active{
   background-color:rgba(0,0,0,1.5);
 }
 
+/*--- # for ID selectors . for class ---*/
+#intro h2{
+  color:#34b1e3;
+  border-bottom:1px dotted #c0c0c0;
+}
 
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+article.post{
+  /*create space between columns of articles*/
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.3);
+  /*Keep the content off the edges of the boxes*/
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0, .3);
+}
 /*-------------Media Queries---------*/
 
-@media screen and (max-width:800px)
+@media screen and (max-width:650px){
+
+  header.primary nav ul{
+    flex-direction:column;
+  }
+  header.primary nav a{
+    display:block;  
+  }
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+}
+
