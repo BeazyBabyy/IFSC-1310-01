@@ -115,6 +115,10 @@ hearder.primary ul li a:hover, header.primary ul li a:active{
   display:flex;
   flex-direction:row;
   justify-content:space-evenly;
+  border-bottom:1px dotted #c0c0c0;
+  /*--Top/Bottom & L/R --*/
+  padding:2.4rem 0;
+  border-top:1px dotted #c0c0c0;  
 }
 
 article.post{
@@ -124,12 +128,95 @@ article.post{
   /*Keep the content off the edges of the boxes*/
   padding:10px;
   border-radius:4px;
-  font-size:.8rem;
+  font-size:.7rem;
 }
 
 #content article.post:hover{
   box-shadow: 0 8px 16px rgba(0,0,0, .3);
 }
+
+time.post-date, figcaption, footer.post-meta{
+  text-transform:uppercase;
+  color:#c0c0c0;
+  font-size:.6rem;
+}
+
+.post figue{
+  margin:0;
+}
+
+.post figue img{
+  /*---- border has size, stroke, color-----*/
+  border: 1px solid #c0c0c0;
+  padding: 4px;
+  /*--Create color for padding, so to speak.---
+      background:red;*/
+  border-radius:4px;
+}
+
+/*--- a tag for href---*/
+.post a{
+  color:#34b1e3;
+}
+
+.post a:hover, .post a:active{
+  text-decoration:none;
+}
+
+/*---Attribute Selector---*/
+aside[role="complementary"]{
+  background-color:#28909c;
+  color:#ffffff;
+  padding:1.4rem;
+}
+
+aside .container{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+}
+
+aside article.widget{
+  width:45%;
+}
+
+/*--Only to focus the last item of type of multiple types--*/
+aside article.widget a:last-of-type {
+  color:#ffffff;
+  /*--Hyper link inline, change inline to block--*/
+  display:block;
+  margin-top:20px;
+  text-align:right;
+}
+
+aside article.widget a{
+  color:#ffffff;
+}
+
+/*-- Turn off a display property/information --*/
+aside article footer{
+  display:none;
+}
+
+#colophon{
+  background-color:#34b1e3;
+}
+
+/*---Create padding size to increase size as well as set margin = 0 to
+    create a full color block--*/
+#colphon h6{
+  padding:20px;
+  margin:0;
+  color:#ffffff;
+  text-align:center;
+  font-size:.9rem;
+  text-transform:uppercase;
+}
+
+
+
+
+
 /*-------------Media Queries---------*/
 
 @media screen and (max-width:650px){
