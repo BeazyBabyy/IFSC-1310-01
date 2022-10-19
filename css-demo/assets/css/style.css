@@ -17,6 +17,34 @@ html {
     margin:40px auto;
   }
 
+  .img-right{
+    float:right;
+    margin: 10px 0 10px 20px; /* Create spacing around the imagine. MARGIN */
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 4px; /* Create rounded edges*/
+    background-color: #119a5a4d; /* Create color inside padding */
+  }
+
+  .img-left{ /*.img with class, Change class to allow changes*/
+    float:left;
+    margin: 10px 20px 10px 0px; /* Create spacing around the imagine. MARGIN */
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 4px; /* Create rounded edges*/
+    background-color: #119a5a4d; /* Create color inside padding */
+  }
+
+  .img-center{
+    display:block;
+    margin:20px auto;
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 4px; /* Create rounded edges*/
+    background-color: #119a5a4d; /* Create color inside padding */
+  }
+
+
   /*-----Responsive Images -----*/
   /* Make content imgs to fit to parent size*/
   img{
@@ -28,6 +56,8 @@ html {
   body {
     font-family: 'Inter', sans-serif;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height:1.2rem; /* Line height for spacing */
   }
 
   /* ----To target header, no space = class primary. (header.primary)
@@ -167,6 +197,88 @@ time.post-date, figcaption, footer.post-meta{
 .post a:hover, .post a:active{
   text-decoration:none;
 }
+
+#demo h2{
+  border-left: 7.5px solid #34b1e3;
+  padding: 10px;
+}
+
+#demo a{
+  color:#34b1e3;
+}
+
+table{
+  border:2px solid #c0c0c0;
+  border-collapse:collapse; /*Remove double borders and not show gap between*/
+  width:100%;
+}
+
+tr:nth-child(){
+  background-color:rgba(192, 192, 192, 0.5);
+
+}
+th{
+  background-color:#000000;
+  color: #ffffff;
+  padding:10px;
+}
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+  width:33%;
+  text-align:right;
+}
+
+td:first-of-type{ /* Move only first items in chart to left */
+  text-align:left;
+}
+
+#demo ol{
+  list-style-type:upper-alpha;
+}
+
+#demo ul{
+  list-style-type:square;
+}
+
+#demo ul ul{
+  list-style-type:circle;
+  color:red;
+}
+
+#demo dl{
+
+}
+
+#demo dt{
+ font-weight:bold;
+}
+
+#demo dd{
+  margin:0;
+}
+
+/* Adjacent sibling combinator */
+dd + dt{
+ /* color:red;  USE COLOR TO CHECK TO SEE WHAT ELEMENTS ARE BEING CHANGED*/
+  margin-top:20px;
+}
+
+#demo blockquote{
+  background-color: #c0c0c0;
+  padding: 20px;
+  border: 5px double #28909c;
+  border-radius: 6px; /* round borders */
+}
+
+#demo cite{
+  display:block; /* Must change to block so it goes down next line */
+  font-weight:bold;
+  font-size:.7rem;
+  text-align:right;
+  margin:20px;
+}
+
 
 /*---Attribute Selector---*/
 aside[role="complementary"]{
