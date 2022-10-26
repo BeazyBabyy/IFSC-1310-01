@@ -16,6 +16,20 @@ body {
 	text-align: center;
 	line-height: 24px;
 }
+.tile{ /*add this class to HTML For better code*/
+	float:left;
+	width:370px;
+	height:125px;
+	margin:0px 0px 20px 20px;
+}
+
+#wrapper div{ /* Or use this to target div within wrapper
+	float:left;
+	width:370px;
+	height:125px;
+	margin:0px 0px 20px 20px;*/ 
+}
+
 #wrapper {
 	background-color: #FFF;
 	border-top-width: 1px;
@@ -63,7 +77,7 @@ body {
 #footer {
 	background-color: #666;
 	clear:both;
-	margin:0px 20px 20px 20px;
+	margin:0px 20px 20px 20px; /*Correct would be margin:20px; Top and bottom will close on each other*/
 }
 h1 {
 	color: #000;
