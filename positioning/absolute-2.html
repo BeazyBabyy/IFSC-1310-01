@@ -17,6 +17,9 @@ body {
 	line-height: 24px;
 }
 #wrapper {
+	position:relative;
+	height:80vh;
+	width:80vw;
 	background-color: #FFF;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -26,54 +29,53 @@ body {
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
-	position:relative;
-	height:600px;
+}
+#wrapper div{
+	height:20vw;
+	width:20vw;
 }
 #red {
 	background-color: #900;
-	height:150px;
-	width:150px;
 	position:absolute;
 	top:0;
 	left:0;
 }
 #green {
 	background-color: #090;
-	height:150px;
-	width:150px;
 	position:absolute;
 	top:0;
 	right:0;
 }
 #blue {
 	background-color: #00F;
-	height:150px;
-	width:150px;
 	position:absolute;
 	bottom:0;
 	left:0;
 }
 #purple {
 	background-color: #63C;
-	height:150px;
-	width:150px;
 	position:absolute;
 	bottom:0;
 	right:0;
 }
 #footer {
 	background-color: #666;
-	height:150px;
-	position: absolute; 
-  	left: 0; 
-  	right: 0; 
+	position:absolute; 
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+  	/*left:0; 
+  	right:0; 
 	top:0;
 	bottom:0;
-	margin: auto;
-  	width: 150px;
+	margin: auto;*/
+	/*One correct way.
+	top:50%;
+	left:50%;
+	margin-top:62.5px; half of width
+	margin-left:-62.5px;*/
 }
 h1 {
 	color: #000;
