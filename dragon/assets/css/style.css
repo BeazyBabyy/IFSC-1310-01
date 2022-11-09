@@ -1,0 +1,63 @@
+/* ------ BOX Sizing -----*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/*-----Responsive Images -----*/
+  img{
+    max-width:100%;
+    height:auto;
+  }
+   
+/*-------Utility Classes-------*/
+    .container{
+        max-width:960px;
+        width:80vw;
+        /*--Centering specific data to center--*/
+        margin:40px auto;
+      }
+    
+      .img-right{
+        float:right;
+        margin: 10px 0 10px 20px; /* Create spacing around the imagine. MARGIN */
+        border: 2px solid #000000;
+        padding: 5px;
+        border-radius: 4px; /* Create rounded edges*/
+        background-color: #119a5a4d; /* Create color inside padding */
+      }
+    
+      .img-left{ /*.img with class, Change class to allow changes*/
+        float:left;
+        margin: 10px 20px 10px 0px; /* Create spacing around the imagine. MARGIN */
+        border: 2px solid #000000;
+        padding: 5px;
+        border-radius: 4px; /* Create rounded edges*/
+        background-color: #119a5a4d; /* Create color inside padding */
+      }
+    
+      .img-center{
+        display:block;
+        margin:20px auto;
+        border: 2px solid #000000;
+        padding: 5px;
+        border-radius: 4px; /* Create rounded edges*/
+        background-color: #119a5a4d; /* Create color inside padding */
+      }
+      
+/* ------ Global Style(Typography) ------*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+
+
+    

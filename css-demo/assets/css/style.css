@@ -49,6 +49,7 @@ html {
   /* Make content imgs to fit to parent size*/
   img{
     max-width:100%;
+    height:auto;
   }
 
   /* ------ Global Style(Typography) ------*/
@@ -322,7 +323,7 @@ aside article footer{
 
 /*---Create padding size to increase size as well as set margin = 0 to
     create a full-color block--*/
-#colphon h6{
+#colophon h6{
   padding:20px;
   margin:0;
   color:#ffffff;
