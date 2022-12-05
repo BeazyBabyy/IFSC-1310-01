@@ -13,6 +13,10 @@ img{
     max-width:700px;
 }
 
+.fade div img{
+    max-width:80%;
+}
+
 /* Customize Previous/Next/Dots/Autoplay */
 
 .slick-autoplay-toggle-button,
@@ -34,3 +38,4 @@ img{
 {
     color:black;
 }
+
