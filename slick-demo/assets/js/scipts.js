@@ -1,4 +1,4 @@
-$(document).ready(function)( {
+$(document).ready(function(){
 
     $(' .bubba').slick({
         dots: true,
@@ -12,4 +12,4 @@ $(document).ready(function)( {
     });
 
 
-)};
+});
