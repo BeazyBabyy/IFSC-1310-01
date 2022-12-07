@@ -40,12 +40,14 @@ html {
     /* top/bottom | left/right (Two value type) */
     padding: 20px 40px;
     }
+
     section.container::before {
       content: "";
       background-image: url("/css-home/assets/img/1657858.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
       position: absolute;
-      top: 0px;
+      top: 102px;
       right: 0px;
       bottom: 0px;
       left: 0px;
