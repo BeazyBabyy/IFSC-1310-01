@@ -42,7 +42,7 @@ html {
     }
     section.container::before {
       content: "";
-      background-image: url("/css-home/assets/img/1657858.jpg");
+      background-image: url("../css-home/assets/img/1657858.jpg");
       background-size: cover;
       position: absolute;
       top: 0px;
