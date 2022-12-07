@@ -10,33 +10,118 @@ html {
 
     /* ------ Global Style(Typography) ------*/
 
-    body {
-        font-family: 'Inter', sans-serif;
-        font-family: 'Raleway', sans-serif;
-        margin: 0;
-        line-height:1.2rem; /* Line height for spacing */
-      }
+  body {
+      font-family: 'Inter', sans-serif;
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      line-height:1.2rem; /* Line height for spacing */
+    }
 
-      header.primary{ 
-        /* --- google adobe color!! ---*/
-        background-color: #34b1e3;
+  header.primary{ 
+    /* --- google adobe color!! ---*/
+    background-color: #34b1e3;
     
        
-        background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328909c' fill-opacity='0.2'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328909c' fill-opacity='0.2'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
     
     
-        text-align: center;
-        text-shadow: 1px 1px #000000;
-        color:#ffffff;
-        /*------Long hand properties for box-----*/
-        padding-top:40px;
-        padding-right:40px;
-        padding-bottom:40px;
-        padding-left:40px;
-        /*---Short Form---*/
-        /* T,R,B,L */
-        padding: 40px 10px 30px 20px;
-        /* padding: 40px <- same as above */
-        /* top/bottom | left/right (Two value type) */
-        padding: 20px 40px;
-     }
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+    color:#ffffff;
+    /*------Long hand properties for box-----*/
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    /*---Short Form---*/
+    /* T,R,B,L */
+    padding: 40px 10px 30px 20px;
+    /* padding: 40px <- same as above */
+    /* top/bottom | left/right (Two value type) */
+    padding: 20px 40px;
+    }
+    section.container::before {
+      content: "";
+      background-image: url("/css-home/assets/img/1657858.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
+    }
+
+    nav.container ul {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 5px;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1em;
+    }
+
+   nav.container li {
+    margin:auto;
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    width: 30%;
+    }
+    
+    nav.container ul ul li{
+      position: relative;
+      list-style-type:none;
+      padding: 5px;
+      width: 50%;
+    }
+    
+    nav.container a:link,
+    nav.container a:visited {
+      color: white;
+      text-decoration: none;
+      background-color: #000000;
+      background-color: rgba(81, 105, 155, 0.942);
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.6s;
+      display: block;
+    }
+    
+    nav.container a:hover,
+    nav.container a:active {
+      background-color: rgba(35, 65, 88, 0.8);
+    }
+
+    nav.container ul ul{
+      padding: 5px;
+    }
+
+  nav.container li.title{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    /* Shorthand Three Value Top, Left/Right, Bottom*/
+    margin: auto;
+  }
+h2 {
+  text-align: center;
+}
+
+/*-------------Media Queries---------*/
+
+@media screen and (max-width:650px){
+
+  header.primary nav ul{
+    flex-direction:column;
+  }
+  header.primary nav a{
+    display:block;  
+  }
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+}
