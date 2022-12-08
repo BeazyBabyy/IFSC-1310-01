@@ -186,8 +186,7 @@ section#articles .container {
   padding: 0 0 4em 0;
 }
 
-section#articles h2,
-#content h2 {
+section#articles h2 {
   flex: 0 0 100%;
   color: #194a78;
   text-align: center;
