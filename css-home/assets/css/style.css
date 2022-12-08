@@ -41,11 +41,10 @@ html {
     padding: 20px 40px;
     }
 
-    section.container::before {
+    section div.container::before {
       content: "";
       background-image: url("../img/1657858.jpg");
       background-size: cover;
-      background-repeat: no-repeat;
       position: absolute;
       top: 102px;
       right: 0px;
@@ -113,6 +112,27 @@ h2 {
   text-align: center;
 }
 
+section#articles {
+  background: #000000;
+}
+
+section#articles .post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+#articles article.post {
+  font-size: 1em;
+  text-shadow: none;
+}
+
+#articles blockquote{
+  word-wrap: normal;
+}
 /*-------------Media Queries---------*/
 
 @media screen and (max-width:650px){
