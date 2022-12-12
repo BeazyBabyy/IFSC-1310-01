@@ -146,6 +146,11 @@ section#articles {
   background: rgb(255, 255, 255);
 }
 
+#articles .post p{
+  font-family: "Catamaran", sans-serif;
+  font-size: 1em;
+}
+
 #articles blockquote{
   word-wrap: normal;
 }
